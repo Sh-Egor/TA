@@ -1,0 +1,117 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 19:07:59  April 20, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		TA1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Stratix II"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY full
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:07:59  APRIL 20, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
+set_global_assignment -name QIP_FILE lpm_add_sub0.qip
+set_global_assignment -name QIP_FILE lpm_latch0.qip
+set_global_assignment -name QIP_FILE lpm_shiftreg0.qip
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name QIP_FILE lpm_constant0.qip
+set_global_assignment -name BDF_FILE TSTmain.bdf
+set_global_assignment -name LL_ROOT_REGION ON -entity TA1 -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity TA1 -section_id "Root Region"
+set_global_assignment -name VECTOR_WAVEFORM_FILE out1.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name QIP_FILE lpm_shiftreg1.qip
+set_global_assignment -name BDF_FILE TSTvict.bdf
+set_global_assignment -name LL_ROOT_REGION ON -entity TSTmain -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity TSTmain -section_id "Root Region"
+set_global_assignment -name VECTOR_WAVEFORM_FILE outVict.vwf
+set_global_assignment -name QIP_FILE lpm_latch1.qip
+set_global_assignment -name BDF_FILE reg.bdf
+set_global_assignment -name QIP_FILE lpm_shiftreg2.qip
+set_global_assignment -name BDF_FILE shift1.bdf
+set_global_assignment -name BDF_FILE nop.bdf
+set_global_assignment -name BDF_FILE flgAnd6.bdf
+set_global_assignment -name BDF_FILE swap.bdf
+set_global_assignment -name BDF_FILE invert.bdf
+set_global_assignment -name BDF_FILE invert2.bdf
+set_global_assignment -name BDF_FILE flgAnd6x2.bdf
+set_global_assignment -name BDF_FILE or6x6.bdf
+set_global_assignment -name BDF_FILE orGiper.bdf
+set_global_assignment -name BDF_FILE normalize.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE tstnorm.vwf
+set_global_assignment -name QIP_FILE lpm_shiftreg3.qip
+set_global_assignment -name QIP_FILE lpm_shiftreg4.qip
+set_global_assignment -name BDF_FILE extender6to10.bdf
+set_global_assignment -name BDF_FILE main.bdf
+set_global_assignment -name QIP_FILE lpm_add_sub1.qip
+set_global_assignment -name BDF_FILE tstAdd.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE tstAdd.vwf
+set_global_assignment -name QIP_FILE lpm_add_sub2.qip
+set_global_assignment -name QIP_FILE lpm_add_sub3.qip
+set_global_assignment -name BDF_FILE muxCor1.bdf
+set_global_assignment -name BDF_FILE normMain.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE tstNormMain.vwf
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name MISC_FILE "C:/TAproj/TA1.dpf"
+set_global_assignment -name QIP_FILE lpm_add_sub4.qip
+set_global_assignment -name QIP_FILE lpm_add_sub5.qip
+set_global_assignment -name BDF_FILE generator.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE tstGenerator.vwf
+set_global_assignment -name BDF_FILE Y1.bdf
+set_global_assignment -name BDF_FILE Y2.bdf
+set_global_assignment -name BDF_FILE Y3.bdf
+set_global_assignment -name BDF_FILE Y4.bdf
+set_global_assignment -name BDF_FILE Q0.bdf
+set_global_assignment -name BDF_FILE Q1.bdf
+set_global_assignment -name BDF_FILE decoder.bdf
+set_global_assignment -name QIP_FILE lpm_counter1.qip
+set_global_assignment -name BDF_FILE full.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE tstFull.vwf
+set_global_assignment -name QIP_FILE lpm_mux1.qip
+set_global_assignment -name QIP_FILE lpm_inv0.qip
+set_global_assignment -name BDF_FILE F5toB6.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE tstFtoB.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE tstFtoB.vwf
+set_global_assignment -name BDF_FILE B6toF5.bdf
+set_global_assignment -name QIP_FILE lpm_inv1.qip
+set_global_assignment -name QIP_FILE lpm_mux2.qip
+set_global_assignment -name BDF_FILE B10toF9.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
