@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY full
+set_global_assignment -name TOP_LEVEL_ENTITY P_UA
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:07:59  APRIL 20, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -105,13 +105,27 @@ set_global_assignment -name QIP_FILE lpm_mux1.qip
 set_global_assignment -name QIP_FILE lpm_inv0.qip
 set_global_assignment -name BDF_FILE F5toB6.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE tstFtoB.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE tstFtoB.vwf
 set_global_assignment -name BDF_FILE B6toF5.bdf
 set_global_assignment -name QIP_FILE lpm_inv1.qip
 set_global_assignment -name QIP_FILE lpm_mux2.qip
 set_global_assignment -name BDF_FILE B10toF9.bdf
+set_global_assignment -name BDF_FILE Pmain.bdf
+set_global_assignment -name QIP_FILE lpm_shiftreg5.qip
+set_global_assignment -name QIP_FILE lpm_counter2.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE PtstMain.vwf
+set_global_assignment -name QIP_FILE lpm_mux3.qip
+set_global_assignment -name BDF_FILE P_q0.bdf
+set_global_assignment -name BDF_FILE P_q1.bdf
+set_global_assignment -name BDF_FILE P_q2.bdf
+set_global_assignment -name BDF_FILE QX_to_Q.bdf
+set_global_assignment -name QIP_FILE lpm_mux4.qip
+set_global_assignment -name BDF_FILE Q_to_Y.bdf
+set_global_assignment -name BDF_FILE P_UA.bdf
+set_global_assignment -name QIP_FILE lpm_counter3.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE P_tst_UA.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE P_tst_UA.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

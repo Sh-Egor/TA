@@ -438,21 +438,6 @@ applicable agreement for further details.
 	(pt 368 240)
 )
 (connector
-	(text "A[2]" (rect 456 232 476 244)(font "Arial" ))
-	(pt 448 248)
-	(pt 536 248)
-)
-(connector
-	(text "A[1]" (rect 456 280 476 292)(font "Arial" ))
-	(pt 448 296)
-	(pt 536 296)
-)
-(connector
-	(text "A[0]" (rect 456 328 476 340)(font "Arial" ))
-	(pt 448 344)
-	(pt 536 344)
-)
-(connector
 	(pt 256 64)
 	(pt 272 64)
 	(bus)
@@ -542,20 +527,9 @@ applicable agreement for further details.
 	(pt 368 288)
 )
 (connector
-	(text "A[3]" (rect 456 184 476 196)(font "Arial" ))
-	(pt 448 200)
-	(pt 536 200)
-)
-(connector
 	(text "<<__$DEF_ALIAS2300>>" (rect 516 199 528 322)(font "Arial" )(vertical)(invisible))
 	(pt 536 200)
 	(pt 536 248)
-	(bus)
-)
-(connector
-	(text "A[9..4]" (rect 520 156 532 189)(font "Arial" )(vertical))
-	(pt 536 64)
-	(pt 536 200)
 	(bus)
 )
 (connector
@@ -571,6 +545,32 @@ applicable agreement for further details.
 (connector
 	(pt 336 352)
 	(pt 384 352)
+)
+(connector
+	(text "A[6]" (rect 456 184 476 196)(font "Arial" ))
+	(pt 448 200)
+	(pt 536 200)
+)
+(connector
+	(text "A[7]" (rect 456 232 476 244)(font "Arial" ))
+	(pt 448 248)
+	(pt 536 248)
+)
+(connector
+	(text "A[8]" (rect 456 280 476 292)(font "Arial" ))
+	(pt 448 296)
+	(pt 536 296)
+)
+(connector
+	(text "A[9]" (rect 456 328 476 340)(font "Arial" ))
+	(pt 448 344)
+	(pt 536 344)
+)
+(connector
+	(text "A[5..0]" (rect 519 155 531 188)(font "Arial" )(vertical))
+	(pt 536 64)
+	(pt 536 200)
+	(bus)
 )
 (junction (pt 256 64))
 (junction (pt 272 64))

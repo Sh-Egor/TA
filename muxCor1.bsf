@@ -26,16 +26,23 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "flg" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "flg" (rect 21 27 35 41)(font "Arial" (font_size 8)))
+		(text "sign" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "sign" (rect 21 27 44 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
 		(pt 0 48)
 		(input)
+		(text "load" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "load" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
 		(text "C[9..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "C[9..0]" (rect 21 43 57 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "C[9..0]" (rect 21 59 57 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 128 32)
