@@ -1,5 +1,5 @@
 Simulator report for TA1
-Fri May 22 00:41:27 2020
+Wed May 27 15:33:02 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,41 +45,41 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 23 nodes     ;
-; Simulation Coverage         ;       0.00 % ;
-; Total Number of Transitions ; 0            ;
+; Simulation Netlist Size     ; 45 nodes     ;
+; Simulation Coverage         ;      95.74 % ;
+; Total Number of Transitions ; 671          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                       ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
-; Option                                                                                     ; Setting     ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
-; Simulation mode                                                                            ; Functional  ; Timing        ;
-; Start time                                                                                 ; 0 ns        ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF        ;               ;
-; Vector input source                                                                        ; tstFtoB.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
-; Check outputs                                                                              ; Off         ; Off           ;
-; Report simulation coverage                                                                 ; On          ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
-; Display missing 1-value coverage report                                                    ; On          ; On            ;
-; Display missing 0-value coverage report                                                    ; On          ; On            ;
-; Detect setup and hold time violations                                                      ; Off         ; Off           ;
-; Detect glitches                                                                            ; Off         ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
-; Generate Signal Activity File                                                              ; Off         ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
-; Group bus channels in simulation results                                                   ; Off         ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off         ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                            ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                                     ; Setting          ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+; Simulation mode                                                                            ; Functional       ; Timing        ;
+; Start time                                                                                 ; 0 ns             ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF             ;               ;
+; Vector input source                                                                        ; tstGenerator.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On               ; On            ;
+; Check outputs                                                                              ; Off              ; Off           ;
+; Report simulation coverage                                                                 ; On               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On               ; On            ;
+; Display missing 1-value coverage report                                                    ; On               ; On            ;
+; Display missing 0-value coverage report                                                    ; On               ; On            ;
+; Detect setup and hold time violations                                                      ; Off              ; Off           ;
+; Detect glitches                                                                            ; Off              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off              ; Off           ;
+; Generate Signal Activity File                                                              ; Off              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto             ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
 
 
 +----------------------+
@@ -94,84 +94,87 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;       0.00 % ;
-; Total nodes checked                                 ; 23           ;
-; Total output ports checked                          ; 22           ;
-; Total output ports with complete 1/0-value coverage ; 0            ;
-; Total output ports with no 1/0-value coverage       ; 22           ;
-; Total output ports with no 1-value coverage         ; 22           ;
-; Total output ports with no 0-value coverage         ; 22           ;
+; Total coverage as a percentage                      ;      95.74 % ;
+; Total nodes checked                                 ; 45           ;
+; Total output ports checked                          ; 47           ;
+; Total output ports with complete 1/0-value coverage ; 45           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 2            ;
+; Total output ports with no 0-value coverage         ; 0            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+-------------------------------------------------+
-; Complete 1/0-Value Coverage                     ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                         ;
++---------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                     ; Output Port Name                                                                                                 ; Output Port Type ;
++---------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+; |generator|Load                                                                                               ; |generator|Load                                                                                                  ; pin_out          ;
+; |generator|inst3                                                                                              ; |generator|inst3                                                                                                 ; regout           ;
+; |generator|inst3~0                                                                                            ; |generator|inst3~0                                                                                               ; out0             ;
+; |generator|inst3~1                                                                                            ; |generator|inst3~1                                                                                               ; out0             ;
+; |generator|inst3~2                                                                                            ; |generator|inst3~2                                                                                               ; out0             ;
+; |generator|inst4                                                                                              ; |generator|inst4                                                                                                 ; regout           ;
+; |generator|inst4~0                                                                                            ; |generator|inst4~0                                                                                               ; out0             ;
+; |generator|inst4~1                                                                                            ; |generator|inst4~1                                                                                               ; out0             ;
+; |generator|inst4~2                                                                                            ; |generator|inst4~2                                                                                               ; out0             ;
+; |generator|clock                                                                                              ; |generator|clock                                                                                                 ; out              ;
+; |generator|inst5                                                                                              ; |generator|inst5                                                                                                 ; regout           ;
+; |generator|inst5~0                                                                                            ; |generator|inst5~0                                                                                               ; out0             ;
+; |generator|inst5~1                                                                                            ; |generator|inst5~1                                                                                               ; out0             ;
+; |generator|inst5~2                                                                                            ; |generator|inst5~2                                                                                               ; out0             ;
+; |generator|inst16                                                                                             ; |generator|inst16                                                                                                ; regout           ;
+; |generator|inst                                                                                               ; |generator|inst                                                                                                  ; regout           ;
+; |generator|inst~0                                                                                             ; |generator|inst~0                                                                                                ; out0             ;
+; |generator|inst15                                                                                             ; |generator|inst15                                                                                                ; regout           ;
+; |generator|Addbit                                                                                             ; |generator|Addbit                                                                                                ; out              ;
+; |generator|Shift                                                                                              ; |generator|Shift                                                                                                 ; pin_out          ;
+; |generator|Add                                                                                                ; |generator|Add                                                                                                   ; pin_out          ;
+; |generator|Done                                                                                               ; |generator|Done                                                                                                  ; pin_out          ;
+; |generator|Q0                                                                                                 ; |generator|Q0                                                                                                    ; pin_out          ;
+; |generator|Q1                                                                                                 ; |generator|Q1                                                                                                    ; pin_out          ;
+; |generator|Q2                                                                                                 ; |generator|Q2                                                                                                    ; pin_out          ;
+; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_comb_bita0   ; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_comb_bita0      ; sumout           ;
+; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_comb_bita0   ; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_comb_bita1   ; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_comb_bita1      ; sumout           ;
+; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_comb_bita1   ; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_comb_bita2   ; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_comb_bita2      ; sumout           ;
+; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_reg_bit1a[2] ; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|safe_q[2]               ; regout           ;
+; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_reg_bit1a[1] ; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|safe_q[1]               ; regout           ;
+; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|counter_reg_bit1a[0] ; |generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component|cntr_csh:auto_generated|safe_q[0]               ; regout           ;
+; |generator|M_QX_to_Q:inst9|M_q2:inst3|inst3                                                                   ; |generator|M_QX_to_Q:inst9|M_q2:inst3|inst3                                                                      ; out0             ;
+; |generator|M_QX_to_Q:inst9|M_q2:inst3|inst7                                                                   ; |generator|M_QX_to_Q:inst9|M_q2:inst3|inst7                                                                      ; out0             ;
+; |generator|M_QX_to_Q:inst9|M_q1:inst2|inst9                                                                   ; |generator|M_QX_to_Q:inst9|M_q1:inst2|inst9                                                                      ; out0             ;
+; |generator|M_QX_to_Q:inst9|M_q1:inst2|inst5                                                                   ; |generator|M_QX_to_Q:inst9|M_q1:inst2|inst5                                                                      ; out0             ;
+; |generator|M_QX_to_Q:inst9|M_q1:inst2|inst7                                                                   ; |generator|M_QX_to_Q:inst9|M_q1:inst2|inst7                                                                      ; out0             ;
+; |generator|M_QX_to_Q:inst9|M_q1:inst2|inst8                                                                   ; |generator|M_QX_to_Q:inst9|M_q1:inst2|inst8                                                                      ; out0             ;
+; |generator|M_QX_to_Q:inst9|M_q1:inst2|inst6                                                                   ; |generator|M_QX_to_Q:inst9|M_q1:inst2|inst6                                                                      ; out0             ;
+; |generator|M_QX_to_Q:inst9|M_q0:inst|inst                                                                     ; |generator|M_QX_to_Q:inst9|M_q0:inst|inst                                                                        ; out0             ;
+; |generator|M_Q_to_Y:inst2|inst3                                                                               ; |generator|M_Q_to_Y:inst2|inst3                                                                                  ; out0             ;
+; |generator|M_Q_to_Y:inst2|inst4                                                                               ; |generator|M_Q_to_Y:inst2|inst4                                                                                  ; out0             ;
+; |generator|M_Q_to_Y:inst2|inst5                                                                               ; |generator|M_Q_to_Y:inst2|inst5                                                                                  ; out0             ;
+; |generator|M_Q_to_Y:inst2|inst6                                                                               ; |generator|M_Q_to_Y:inst2|inst6                                                                                  ; out0             ;
++---------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                                                                                                           ;
-+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                      ; Output Port Name                                                                               ; Output Port Type ;
-+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
-; |B6toF5|Forward[4]                                                                             ; |B6toF5|Forward[4]                                                                             ; pin_out          ;
-; |B6toF5|Forward[3]                                                                             ; |B6toF5|Forward[3]                                                                             ; pin_out          ;
-; |B6toF5|Forward[2]                                                                             ; |B6toF5|Forward[2]                                                                             ; pin_out          ;
-; |B6toF5|Forward[1]                                                                             ; |B6toF5|Forward[1]                                                                             ; pin_out          ;
-; |B6toF5|Forward[0]                                                                             ; |B6toF5|Forward[0]                                                                             ; pin_out          ;
-; |B6toF5|Back[5]                                                                                ; |B6toF5|Back[5]                                                                                ; out              ;
-; |B6toF5|Back[3]                                                                                ; |B6toF5|Back[3]                                                                                ; out              ;
-; |B6toF5|Back[2]                                                                                ; |B6toF5|Back[2]                                                                                ; out              ;
-; |B6toF5|Back[1]                                                                                ; |B6toF5|Back[1]                                                                                ; out              ;
-; |B6toF5|Back[0]                                                                                ; |B6toF5|Back[0]                                                                                ; out              ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~0 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~1 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout   ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~0 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~0 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~1 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~1 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout   ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout   ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~0 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~0 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~1 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~1 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout   ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout   ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~0 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~0 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~1 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~1 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout   ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout   ; out0             ;
-+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                     ;
++---------------------------------------------+---------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                            ; Output Port Type ;
++---------------------------------------------+---------------------------------------------+------------------+
+; |generator|start                            ; |generator|start                            ; out              ;
+; |generator|M_QX_to_Q:inst9|M_q2:inst3|inst6 ; |generator|M_QX_to_Q:inst9|M_q2:inst3|inst6 ; out0             ;
++---------------------------------------------+---------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                                                                                                           ;
-+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                      ; Output Port Name                                                                               ; Output Port Type ;
-+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
-; |B6toF5|Forward[4]                                                                             ; |B6toF5|Forward[4]                                                                             ; pin_out          ;
-; |B6toF5|Forward[3]                                                                             ; |B6toF5|Forward[3]                                                                             ; pin_out          ;
-; |B6toF5|Forward[2]                                                                             ; |B6toF5|Forward[2]                                                                             ; pin_out          ;
-; |B6toF5|Forward[1]                                                                             ; |B6toF5|Forward[1]                                                                             ; pin_out          ;
-; |B6toF5|Forward[0]                                                                             ; |B6toF5|Forward[0]                                                                             ; pin_out          ;
-; |B6toF5|Back[5]                                                                                ; |B6toF5|Back[5]                                                                                ; out              ;
-; |B6toF5|Back[3]                                                                                ; |B6toF5|Back[3]                                                                                ; out              ;
-; |B6toF5|Back[2]                                                                                ; |B6toF5|Back[2]                                                                                ; out              ;
-; |B6toF5|Back[1]                                                                                ; |B6toF5|Back[1]                                                                                ; out              ;
-; |B6toF5|Back[0]                                                                                ; |B6toF5|Back[0]                                                                                ; out              ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~0 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~1 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout   ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~0 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~0 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~1 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout~1 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout   ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w1_n0_mux_dataout   ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~0 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~0 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~1 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout~1 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout   ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w2_n0_mux_dataout   ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~0 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~0 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~1 ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout~1 ; out0             ;
-; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout   ; |B6toF5|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_54e:auto_generated|l1_w3_n0_mux_dataout   ; out0             ;
-+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 +---------------------+
@@ -187,17 +190,22 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri May 22 00:41:26 2020
+    Info: Processing started: Wed May 27 15:33:01 2020
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off TA1 -c TA1
-Info: Using vector source file "C:/TAproj/tstFtoB.vwf"
+Info: Using vector source file "C:/TAproj/tstGenerator.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "Y1" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Y2" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Y3" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Y4" in design.
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|generator|inst"
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is       0.00 %
-Info: Number of transitions in simulation is 0
-Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+Info: Simulation coverage is      95.74 %
+Info: Number of transitions in simulation is 671
+Info: Quartus II Simulator was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 158 megabytes
-    Info: Processing ended: Fri May 22 00:41:27 2020
+    Info: Processing ended: Wed May 27 15:33:02 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

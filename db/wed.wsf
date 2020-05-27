@@ -2449,129 +2449,6 @@ VECTOR("C:/TAproj/tstFull.vwf")
 	}
 }
 
-VECTOR("C:/TAproj/db/TA1.sim.cvwf")
-{
-	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 500000;
-		NUMERATOR = 999;
-		DENOMINATOR = 500000;
-		TOP_INDEX = 0;
-	}
-	CLOCK{
-		PERIOD = 10000;
-		OFFSET = 0;
-		DUTY_CYCLE = 50;
-	}
-	RANDOM_VALUE{
-		INTERVAL_TYPE = HALF_GRID;
-	}
-	LINE{
-		SIGNAL = "Back";
-		INDEX = 0;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Back[5]";
-		INDEX = 1;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Back[4]";
-		INDEX = 2;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Back[3]";
-		INDEX = 3;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Back[2]";
-		INDEX = 4;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Back[1]";
-		INDEX = 5;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Back[0]";
-		INDEX = 6;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Forward";
-		INDEX = 7;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Forward[4]";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Forward[3]";
-		INDEX = 9;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Forward[2]";
-		INDEX = 10;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Forward[1]";
-		INDEX = 11;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Forward[0]";
-		INDEX = 12;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-}
-
 VECTOR("C:/TAproj/tstFtoB.vwf")
 {
 	ZOOM{
@@ -2688,6 +2565,105 @@ VECTOR("C:/TAproj/tstFtoB.vwf")
 	LINE{
 		SIGNAL = "Forward[0]";
 		INDEX = 12;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+}
+
+VECTOR("C:/TAproj/db/TA1.sim.cvwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 500000;
+		NUMERATOR = 999;
+		DENOMINATOR = 500000;
+		TOP_INDEX = 0;
+	}
+	CLOCK{
+		PERIOD = 10000;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
+	}
+	RANDOM_VALUE{
+		INTERVAL_TYPE = HALF_GRID;
+	}
+	LINE{
+		SIGNAL = "clock";
+		INDEX = 0;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "start";
+		INDEX = 1;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Addbit";
+		INDEX = 2;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Q0";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Q1";
+		INDEX = 4;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Q2";
+		INDEX = 5;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Load";
+		INDEX = 6;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Shift";
+		INDEX = 7;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Add";
+		INDEX = 8;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Done";
+		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
