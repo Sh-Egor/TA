@@ -250,23 +250,6 @@ applicable agreement for further details.
 	)
 	(flipy_rotate90)
 )
-(pin
-	(output)
-	(rect 456 424 472 600)
-	(text "OUTPUT" (rect 0 1 10 39)(font "Arial" (font_size 6))(vertical))
-	(text "State[2..0]" (rect 2 88 14 139)(font "Arial" )(vertical))
-	(pt 8 0)
-	(drawing
-		(line (pt 8 0)(pt 8 52)(line_width 1))
-		(line (pt 4 52)(pt 4 78)(line_width 1))
-		(line (pt 12 52)(pt 12 78)(line_width 1))
-		(line (pt 12 52)(pt 4 52)(line_width 1))
-		(line (pt 4 78)(pt 8 82)(line_width 1))
-		(line (pt 8 82)(pt 12 78)(line_width 1))
-		(line (pt 12 78)(pt 8 82)(line_width 1))
-	)
-	(flipy_rotate90)
-)
 (symbol
 	(rect 472 112 520 144)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
@@ -290,91 +273,6 @@ applicable agreement for further details.
 		(line (pt 13 7)(pt 31 16)(line_width 1))
 		(line (pt 13 25)(pt 31 16)(line_width 1))
 		(circle (rect 31 12 39 20)(line_width 1))
-	)
-)
-(symbol
-	(rect 304 200 448 360)
-	(text "generator" (rect 5 0 60 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 144 25 156)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 21 27 50 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Addbit" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "Addbit" (rect 21 43 57 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "start" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "start" (rect 21 59 46 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "N_flg" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "N_flg" (rect 21 75 50 89)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(line_width 1))
-	)
-	(port
-		(pt 144 32)
-		(output)
-		(text "Load" (rect 0 0 28 14)(font "Arial" (font_size 8)))
-		(text "Load" (rect 95 27 123 41)(font "Arial" (font_size 8)))
-		(line (pt 144 32)(pt 128 32)(line_width 1))
-	)
-	(port
-		(pt 144 48)
-		(output)
-		(text "Shift" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "Shift" (rect 98 43 123 57)(font "Arial" (font_size 8)))
-		(line (pt 144 48)(pt 128 48)(line_width 1))
-	)
-	(port
-		(pt 144 64)
-		(output)
-		(text "Add" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "Add" (rect 100 59 123 73)(font "Arial" (font_size 8)))
-		(line (pt 144 64)(pt 128 64)(line_width 1))
-	)
-	(port
-		(pt 144 80)
-		(output)
-		(text "N_st" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "N_st" (rect 98 75 123 89)(font "Arial" (font_size 8)))
-		(line (pt 144 80)(pt 128 80)(line_width 1))
-	)
-	(port
-		(pt 144 96)
-		(output)
-		(text "N_gen" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "N_gen" (rect 87 91 123 105)(font "Arial" (font_size 8)))
-		(line (pt 144 96)(pt 128 96)(line_width 1))
-	)
-	(port
-		(pt 144 112)
-		(output)
-		(text "Done" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "Done" (rect 94 107 123 121)(font "Arial" (font_size 8)))
-		(line (pt 144 112)(pt 128 112)(line_width 1))
-	)
-	(port
-		(pt 144 128)
-		(output)
-		(text "State[2..0]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
-		(text "State[2..0]" (rect 66 123 123 137)(font "Arial" (font_size 8)))
-		(line (pt 144 128)(pt 128 128)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 128 144)(line_width 1))
 	)
 )
 (symbol
@@ -526,6 +424,84 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 168 112)(line_width 1))
 	)
 )
+(symbol
+	(rect 304 200 432 360)
+	(text "newUA" (rect 5 0 48 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 21 27 50 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Addbit" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "Addbit" (rect 21 43 57 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "start" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "start" (rect 21 59 46 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Ntick" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Ntick" (rect 21 75 48 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "Load" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "Load" (rect 79 27 107 41)(font "Arial" (font_size 8)))
+		(line (pt 128 32)(pt 112 32)(line_width 1))
+	)
+	(port
+		(pt 128 48)
+		(output)
+		(text "Shift" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "Shift" (rect 82 43 107 57)(font "Arial" (font_size 8)))
+		(line (pt 128 48)(pt 112 48)(line_width 1))
+	)
+	(port
+		(pt 128 64)
+		(output)
+		(text "Add" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Add" (rect 84 59 107 73)(font "Arial" (font_size 8)))
+		(line (pt 128 64)(pt 112 64)(line_width 1))
+	)
+	(port
+		(pt 128 80)
+		(output)
+		(text "N_st" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "N_st" (rect 82 75 107 89)(font "Arial" (font_size 8)))
+		(line (pt 128 80)(pt 112 80)(line_width 1))
+	)
+	(port
+		(pt 128 96)
+		(output)
+		(text "N_gen" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "N_gen" (rect 71 91 107 105)(font "Arial" (font_size 8)))
+		(line (pt 128 96)(pt 112 96)(line_width 1))
+	)
+	(port
+		(pt 128 112)
+		(output)
+		(text "Done" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "Done" (rect 78 107 107 121)(font "Arial" (font_size 8)))
+		(line (pt 128 112)(pt 112 112)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 144)(line_width 1))
+	)
+)
 (connector
 	(pt 672 200)
 	(pt 664 200)
@@ -628,22 +604,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 464 424)
-	(pt 464 328)
-	(bus)
-)
-(connector
-	(pt 448 328)
-	(pt 464 328)
-	(bus)
-)
-(connector
 	(pt 480 232)
 	(pt 480 424)
-)
-(connector
-	(pt 448 232)
-	(pt 480 232)
 )
 (connector
 	(pt 480 232)
@@ -654,19 +616,11 @@ applicable agreement for further details.
 	(pt 496 248)
 )
 (connector
-	(pt 448 248)
-	(pt 496 248)
-)
-(connector
 	(pt 496 248)
 	(pt 672 248)
 )
 (connector
 	(pt 512 424)
-	(pt 512 264)
-)
-(connector
-	(pt 448 264)
 	(pt 512 264)
 )
 (connector
@@ -696,10 +650,6 @@ applicable agreement for further details.
 (connector
 	(pt 544 424)
 	(pt 544 296)
-)
-(connector
-	(pt 448 312)
-	(pt 560 312)
 )
 (connector
 	(pt 560 312)
@@ -767,16 +717,8 @@ applicable agreement for further details.
 	(pt 640 416)
 )
 (connector
-	(pt 448 296)
-	(pt 544 296)
-)
-(connector
 	(pt 544 296)
 	(pt 640 296)
-)
-(connector
-	(pt 448 280)
-	(pt 528 280)
 )
 (connector
 	(pt 528 280)
@@ -835,6 +777,30 @@ applicable agreement for further details.
 (connector
 	(pt 264 88)
 	(pt 264 280)
+)
+(connector
+	(pt 432 312)
+	(pt 560 312)
+)
+(connector
+	(pt 432 296)
+	(pt 544 296)
+)
+(connector
+	(pt 432 280)
+	(pt 528 280)
+)
+(connector
+	(pt 432 264)
+	(pt 512 264)
+)
+(connector
+	(pt 432 248)
+	(pt 496 248)
+)
+(connector
+	(pt 432 232)
+	(pt 480 232)
 )
 (junction (pt 232 232))
 (junction (pt 480 232))
