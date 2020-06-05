@@ -1,6 +1,24 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="TA1">
-		<CBX_INST_ENTRY INSTANCE_NAME="|P_UA|lpm_counter3:inst13|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_dsh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|B10toF9:inst13|lpm_mux2:inst1|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|B6toF5:inst14|lpm_mux1:inst4|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|F5toB6:inst10|lpm_mux1:inst4|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|F5toB6:inst9|lpm_mux1:inst4|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMain:inst5|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_74i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMantiss:inst18|lpm_add_sub7:inst14|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_4gi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMantiss:inst18|lpm_mux6:inst20|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_74e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|F5toB6:inst11|lpm_mux1:inst4|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMain:inst5|Pmain:inst|lpm_add_sub3:inst7|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_h1i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMain:inst5|Pmain:inst|muxCor1:inst20|lpm_mux3:inst11|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_l5e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMain:inst5|normalize:inst1|lpm_mux0:inst23|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_a4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMantiss:inst18|isok:inst9|lpm_mux5:inst5|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_24e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMantiss:inst18|lpm_add_sub6:inst12|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_r7i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|F5toB6:inst12|lpm_mux1:inst4|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|P_UA:inst|lpm_counter3:inst13|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_dsh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMain:inst5|Pmain:inst|lpm_add_sub2:inst5|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_i5i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMain:inst5|lpm_add_sub5:inst3|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_60i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMain:inst5|normalize:inst1|lpm_mux0:inst24|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_a4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|full|normMain:inst5|Pmain:inst|lpm_counter2:inst4|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_bsh.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 112 144)
+	(rect 16 16 112 176)
 	(text "Q_to_Y" (rect 5 0 48 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -72,7 +72,21 @@ applicable agreement for further details.
 		(text "Y4" (rect 59 75 75 89)(font "Arial" (font_size 8)))
 		(line (pt 96 80)(pt 80 80)(line_width 1))
 	)
+	(port
+		(pt 96 96)
+		(output)
+		(text "Y5" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y5" (rect 59 91 75 105)(font "Arial" (font_size 8)))
+		(line (pt 96 96)(pt 80 96)(line_width 1))
+	)
+	(port
+		(pt 96 112)
+		(output)
+		(text "Y6" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y6" (rect 59 107 75 121)(font "Arial" (font_size 8)))
+		(line (pt 96 112)(pt 80 112)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 80 112)(line_width 1))
+		(rectangle (rect 16 16 80 144)(line_width 1))
 	)
 )

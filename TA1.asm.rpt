@@ -1,5 +1,5 @@
 Assembler report for TA1
-Wed May 27 00:36:57 2020
+Fri Jun 05 23:01:19 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed May 27 00:36:57 2020 ;
+; Assembler Status      ; Successful - Fri Jun 05 23:01:19 2020 ;
 ; Revision Name         ; TA1                                   ;
-; Top-level Entity Name ; P_UA                                  ;
+; Top-level Entity Name ; full                                  ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -96,7 +96,7 @@ applicable agreement for further details.
 +----------------+----------------------------+
 ; Device         ; EP2S15F484C3               ;
 ; JTAG usercode  ; 0xFFFFFFFF                 ;
-; Checksum       ; 0x002787B9                 ;
+; Checksum       ; 0x0028F7DA                 ;
 +----------------+----------------------------+
 
 
@@ -107,7 +107,7 @@ applicable agreement for further details.
 +--------------------+------------------------+
 ; Device             ; EPC16                  ;
 ; JTAG usercode      ; 0xFFFFFFFF             ;
-; Checksum           ; 0x1EF5B519             ;
+; Checksum           ; 0x1EF01B37             ;
 ; Compression Ratio  ; 3                      ;
 +--------------------+------------------------+
 
@@ -118,14 +118,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed May 27 00:36:54 2020
+    Info: Processing started: Fri Jun 05 23:01:16 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off TA1 -c TA1
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 250 megabytes
-    Info: Processing ended: Wed May 27 00:36:57 2020
+    Info: Peak virtual memory: 238 megabytes
+    Info: Processing ended: Fri Jun 05 23:01:19 2020
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 
