@@ -6201,9 +6201,6 @@ q_to_y.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-P_UA:inst|Q_to_Y:inst
-}
 # macro_sequence
 
 # end
@@ -6220,9 +6217,6 @@ d8cb70db3717b0db9acb49819a463697
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-P_UA:inst|QX_to_Q:inst9
 }
 # macro_sequence
 
@@ -6241,9 +6235,6 @@ a9df1c95febecd3feda5f748bd99a8
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-P_UA:inst|QX_to_Q:inst9|Q0:inst3
-}
 # macro_sequence
 
 # end
@@ -6261,9 +6252,6 @@ d32745b335d9da31dee8dab9419ea9
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-P_UA:inst|QX_to_Q:inst9|Q1:inst4
-}
 # macro_sequence
 
 # end
@@ -6280,29 +6268,6 @@ e0c2475b53787c7f301280331ad113ec
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-P_UA:inst|QX_to_Q:inst9|Q2:inst5
-}
-# macro_sequence
-
-# end
-# entity
-P_UA
-# storage
-db|TA1.(66).cnf
-db|TA1.(66).cnf
-# case_insensitive
-# source_file
-p_ua.bdf
-1324ba131a9bac7d7f16d9f62b28dc0
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-P_UA:inst
 }
 # macro_sequence
 
@@ -7961,6 +7926,59 @@ normMantiss:inst18|lpm_mux6:inst20|lpm_mux:lpm_mux_component|mux_74e:auto_genera
 
 # end
 # entity
+UA_mult
+# storage
+db|TA1.(128).cnf
+db|TA1.(128).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ua_mult.vhd
+ec66f963dab6ac5ab37750ea3aa9ad7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+P_UA:inst|UA_mult:inst1
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+P_UA
+# storage
+db|TA1.(66).cnf
+db|TA1.(66).cnf
+# case_insensitive
+# source_file
+p_ua.bdf
+a9445a426cd21b335a2a271b35edba
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+P_UA:inst
+}
+# macro_sequence
+
+# end
+# entity
 full
 # storage
 db|TA1.(39).cnf
@@ -7968,7 +7986,7 @@ db|TA1.(39).cnf
 # case_insensitive
 # source_file
 full.bdf
-78b51423c33d5e4af32874859be45
+477b64c07ba8b6a04372c0e9a49c469f
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

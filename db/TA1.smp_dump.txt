@@ -1,0 +1,10 @@
+
+State Machine - |full|P_UA:inst|UA_mult:inst1|s
+Name s.S110 s.S101 s.S100 s.S011 s.S010 s.S001 s.S000 
+s.S000 0 0 0 0 0 0 0 
+s.S001 0 0 0 0 0 1 1 
+s.S010 0 0 0 0 1 0 1 
+s.S011 0 0 0 1 0 0 1 
+s.S100 0 0 1 0 0 0 1 
+s.S101 0 1 0 0 0 0 1 
+s.S110 1 0 0 0 0 0 1 

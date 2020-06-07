@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 5.825 ns
-From           : A[4]
-To             : normMain:inst5|Pmain:inst|lpm_shiftreg5:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]
+Actual Time    : 6.100 ns
+From           : Aexp[4]
+To             : normMantiss:inst18|lpm_dff0:inst11|lpm_ff:lpm_ff_component|dffs[4]
 From Clock     : --
 To Clock       : clock
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.367 ns
-From           : normMain:inst5|Pmain:inst|lpm_shiftreg5:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]
-To             : C[4]
+Actual Time    : 7.828 ns
+From           : normMain:inst5|Pmain:inst|lpm_shiftreg5:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8]
+To             : C[5]
 From Clock     : clock
 To Clock       : --
 Failed Paths   : 0
@@ -25,7 +25,7 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 0.411 ns
+Actual Time    : 0.236 ns
 From           : clock
 To             : normMain:inst5|Pmain:inst|inst6
 From Clock     : --
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 101.05 MHz ( period = 9.896 ns )
-From           : normMain:inst5|Pmain:inst|lpm_counter2:inst4|lpm_counter:lpm_counter_component|cntr_bsh:auto_generated|safe_q[0]
-To             : normMain:inst5|Pmain:inst|lpm_shiftreg5:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3]
+Actual Time    : 95.77 MHz ( period = 10.442 ns )
+From           : normMain:inst5|Pmain:inst|lpm_counter2:inst4|lpm_counter:lpm_counter_component|cntr_bsh:auto_generated|safe_q[1]
+To             : normMain:inst5|Pmain:inst|lpm_shiftreg5:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4]
 From Clock     : clock
 To Clock       : clock
 Failed Paths   : 0

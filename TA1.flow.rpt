@@ -1,5 +1,5 @@
 Flow report for TA1
-Fri Jun 05 23:01:21 2020
+Sun Jun 07 18:23:29 2020
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-------------------------------+----------------------------------------------+
-; Flow Status                   ; Successful - Fri Jun 05 23:01:21 2020        ;
+; Flow Status                   ; Successful - Sun Jun 07 18:23:29 2020        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; TA1                                          ;
 ; Top-level Entity Name         ; full                                         ;
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Met timing requirements       ; Yes                                          ;
 ; Logic utilization             ; < 1 %                                        ;
 ;     Combinational ALUTs       ; 108 / 12,480 ( < 1 % )                       ;
-;     Dedicated logic registers ; 38 / 12,480 ( < 1 % )                        ;
-; Total registers               ; 38                                           ;
+;     Dedicated logic registers ; 42 / 12,480 ( < 1 % )                        ;
+; Total registers               ; 42                                           ;
 ; Total pins                    ; 42 / 343 ( 12 % )                            ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/05/2020 23:01:01 ;
+; Start date & time ; 06/07/2020 18:23:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TA1                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 194341096654916.159138366124608 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 194341096654916.159153978927916 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_ADD_SUB                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_LATCH                       ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_SHIFTREG                    ; --            ; --          ; --             ;
@@ -221,11 +221,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:06     ; 1.0                     ; 259 MB              ; 00:00:09                           ;
+; Analysis & Synthesis    ; 00:00:07     ; 1.0                     ; 259 MB              ; 00:00:09                           ;
 ; Fitter                  ; 00:00:06     ; 1.0                     ; 268 MB              ; 00:00:07                           ;
-; Assembler               ; 00:00:03     ; 1.0                     ; 238 MB              ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 168 MB              ; 00:00:01                           ;
-; Total                   ; 00:00:16     ; --                      ; --                  ; 00:00:19                           ;
+; Assembler               ; 00:00:02     ; 1.0                     ; 238 MB              ; 00:00:02                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 168 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:15     ; --                      ; --                  ; 00:00:19                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

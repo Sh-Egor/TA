@@ -45,116 +45,39 @@ Cexp[4] <= B6toF5:inst14.Forward[4]
 
 
 |full|P_UA:inst
-Load <= Q_to_Y:inst.Y1
-clock => inst3.CLK
-clock => inst4.CLK
+Load <= UA_mult:inst1.Load
+clock => UA_mult:inst1.Clock
 clock => lpm_counter3:inst13.clock
-clock => inst2.CLK
-bit => QX_to_Q:inst9.X1
-start => QX_to_Q:inst9.X3
-n_takt => QX_to_Q:inst9.X4
-Shift <= Q_to_Y:inst.Y2
-Add <= Q_to_Y:inst.Y3
-Done <= Q_to_Y:inst.Y6
-ST_NORM <= Q_to_Y:inst.Y4
-NORM_GEN <= Q_to_Y:inst.Y5
+bit => UA_mult:inst1.X1
+start => UA_mult:inst1.X3
+n_takt => UA_mult:inst1.X4
+Shift <= UA_mult:inst1.Shift
+Add <= UA_mult:inst1.Add
+Done <= UA_mult:inst1.Done
+ST_NORM <= UA_mult:inst1.StartNorm
+NORM_GEN <= UA_mult:inst1.Normtakt
 
 
-|full|P_UA:inst|Q_to_Y:inst
-Y1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Q0 => inst7.IN0
-Q0 => inst1.IN0
-Q0 => inst3.IN0
-Q0 => inst4.IN0
-Q1 => inst8.IN0
-Q1 => inst2.IN1
-Q1 => inst4.IN1
-Q2 => inst.IN2
-Q2 => inst9.IN0
-Q2 => inst3.IN2
-Y2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-Y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-Y4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Y5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Y6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|full|P_UA:inst|QX_to_Q:inst9
-Q0Out <= Q0:inst3.Q0out
-Q0 => Q0:inst3.Q0
-Q0 => Q1:inst4.Q0
-Q0 => Q2:inst5.Q0
-Q1 => Q0:inst3.Q1
-Q1 => Q1:inst4.Q1
-Q1 => Q2:inst5.Q1
-X2 => Q0:inst3.X2
-X2 => Q1:inst4.X2
-X2 => Q2:inst5.X2
-Q2 => Q0:inst3.Q2
-Q2 => Q1:inst4.Q2
-Q2 => Q2:inst5.Q2
-X3 => Q0:inst3.X3
-X3 => Q1:inst4.X3
-X3 => Q2:inst5.X3
-X4 => Q0:inst3.X4
-X4 => Q1:inst4.X4
-X4 => Q2:inst5.X4
-X1 => Q0:inst3.X1
-X1 => Q1:inst4.X1
-X1 => Q2:inst5.X1
-Q1Out <= Q1:inst4.Q1out
-Q2Out <= Q2:inst5.Q2Out
-
-
-|full|P_UA:inst|QX_to_Q:inst9|Q0:inst3
-Q0out <= inst18.DB_MAX_OUTPUT_PORT_TYPE
-Q0 => inst.IN0
-Q0 => inst16.IN0
-Q0 => inst17.IN0
-Q0 => inst15.IN0
-Q1 => inst14.IN1
-Q1 => inst1.IN0
-Q1 => inst17.IN1
-Q2 => inst16.IN2
-Q2 => inst2.IN0
-X4 => inst16.IN3
-X4 => inst17.IN3
-X2 => inst4.IN0
-X3 => ~NO_FANOUT~
-X1 => ~NO_FANOUT~
-
-
-|full|P_UA:inst|QX_to_Q:inst9|Q1:inst4
-Q1out <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Q0 => inst7.IN0
-Q0 => inst2.IN0
-Q0 => inst3.IN0
-Q0 => inst1.IN0
-Q1 => inst8.IN0
-Q1 => inst3.IN1
-Q2 => inst.IN2
-Q2 => inst2.IN2
-Q2 => inst9.IN0
-X4 => inst2.IN3
-X4 => inst3.IN3
-X2 => inst1.IN3
-X1 => ~NO_FANOUT~
-X3 => ~NO_FANOUT~
-
-
-|full|P_UA:inst|QX_to_Q:inst9|Q2:inst5
-Q2Out <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Q0 => inst7.IN0
-Q0 => inst2.IN0
-Q0 => inst3.IN2
-Q1 => inst8.IN0
-Q2 => inst9.IN0
-Q2 => inst1.IN2
-X3 => inst.IN3
-X2 => inst11.IN0
-X2 => inst3.IN3
-X1 => inst10.IN0
-X4 => ~NO_FANOUT~
+|full|P_UA:inst|UA_mult:inst1
+Clock => s~11.DATAIN
+X1 => s~0.DATAB
+X1 => Selector1.IN3
+X1 => Selector2.IN1
+X1 => s~1.DATAB
+X2 => s~0.OUTPUTSELECT
+X2 => s~1.OUTPUTSELECT
+X2 => s~4.DATAB
+X3 => s~2.DATAB
+X3 => Selector0.IN1
+X4 => s~6.DATAB
+X4 => Selector0.IN2
+X4 => Selector0.IN3
+Load <= Load~0.DB_MAX_OUTPUT_PORT_TYPE
+Shift <= Shift~0.DB_MAX_OUTPUT_PORT_TYPE
+Add <= Add~0.DB_MAX_OUTPUT_PORT_TYPE
+StartNorm <= StartNorm~0.DB_MAX_OUTPUT_PORT_TYPE
+Normtakt <= Normtakt~0.DB_MAX_OUTPUT_PORT_TYPE
+Done <= Done~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |full|P_UA:inst|lpm_counter3:inst13
