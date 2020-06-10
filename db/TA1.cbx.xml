@@ -1,6 +1,22 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="TA1">
-		<CBX_INST_ENTRY INSTANCE_NAME="|generator|lpm_counter1:inst14|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_csh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|normMantiss:inst3|lpm_add_sub6:inst7|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_r7i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|F5toB6:inst4|lpm_mux1:inst4|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|normMain:inst1|lpm_add_sub4:inst2|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_74i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|normMantiss:inst3|isOk:inst9|lpm_mux4:inst3|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_24e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|F5toB6:inst1|lpm_mux1:inst4|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|normMain:inst1|main:inst|lpm_add_sub3:inst7|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_h1i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|normMain:inst1|normalize:inst1|lpm_mux0:inst23|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_a4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|normMantiss:inst3|lpm_add_sub7:inst8|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_4gi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|B10toF9:inst5|lpm_mux2:inst1|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_94e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|B6toF5:inst6|lpm_mux1:inst4|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|F5toB6:inst2|lpm_mux1:inst4|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|normMain:inst1|lpm_add_sub5:inst3|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_60i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|normMain:inst1|main:inst|lpm_add_sub2:inst5|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_i5i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|normMain:inst1|normalize:inst1|lpm_mux0:inst24|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_a4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|F5toB6:inst3|lpm_mux1:inst4|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_54e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|generator:inst|lpm_counter1:inst14|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_csh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|multipcatcion|full:inst|normMantiss:inst3|lpm_mux3:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_74e.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
